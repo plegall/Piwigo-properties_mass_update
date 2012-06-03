@@ -1,0 +1,1 @@
+Aggiornare le proprietà di più foto contemporaneamente importando un file di testo
