@@ -1,0 +1,1 @@
+Bijwerken van de eigenschappen van meer foto's tegelijkertijd door het importeren van een tekstbestand
