@@ -1,1 +1,1 @@
-Mise à jour de propriétés de plusieurs photos à la fois par l'import d'un fichier texte
+Update many photo properties at once
