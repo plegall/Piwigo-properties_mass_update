@@ -22,4 +22,11 @@
 // +-----------------------------------------------------------------------+
 $lang['%d photos are missing in Piwigo: %s'] = '%d φωτογραφίες λείπουν από το Piwigo: %s';
 $lang['%d photos updated'] = '%d φωτογραφίες ενημερώθηκαν';
+$lang['Description for another photo'] = 'Περιγραφή για μια άλλη φωτογραφία';
+$lang['File pattern'] = 'πρότυπο αρχείου';
+$lang['Photo description, until the end of the line'] = 'Περιγραφή φωτογραφίας, μέχρι το τέλος της γραμμής';
+$lang['Send File - Photo Properties Mass Update'] = 'Αποστολή αρχείου - Μαζικής Ενημέρωση Ιδιοτήτων Φωτογραφίας';
+$lang['Text file'] = 'Αρχείο Κειμένου';
+$lang['Update'] = 'Ενημέρωση';
+$lang['Wrong file, please select a plain text file'] = 'Λάθος αρχείο, επιλέξτε ένα απλό αρχείο κειμένου';
 ?>
