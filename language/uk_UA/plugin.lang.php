@@ -20,13 +20,13 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['%d photos are missing in Piwigo: %s'] = '%d світлини відсутні в Piwigi: %s';
-$lang['%d photos updated'] = '%d світлин оновлено';
-$lang['Description for another photo'] = 'Опис для іншої світлини';
-$lang['File pattern'] = 'Файл - зразок';
-$lang['Photo description, until the end of the line'] = 'Опис світлини, до кінця рядка';
+$lang['%d photos are missing in Piwigo: %s'] = '%d зображень відсутні в Piwigo: %s';
+$lang['%d photos updated'] = '%d зображень оновлено';
+$lang['Description for another photo'] = 'Опис для іншого зображення';
+$lang['File pattern'] = 'Файл шаблону';
+$lang['Photo description, until the end of the line'] = 'Опис зображення, до кінця рядка';
 $lang['Send File - Photo Properties Mass Update'] = 'Відіслати файл - Photo Properties Mass Update';
 $lang['Text file'] = 'Тектовий файл';
 $lang['Update'] = 'Оновити';
-$lang['Wrong file, please select a plain text file'] = 'Неправільний файл, будьласка оберіть звичайний текстовий файл';
+$lang['Wrong file, please select a plain text file'] = 'Неправильний файл, будь ласка оберіть звичайний текстовий файл';
 ?>
