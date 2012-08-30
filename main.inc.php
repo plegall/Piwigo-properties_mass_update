@@ -3,7 +3,7 @@
 Plugin Name: Properties Mass Update
 Version: auto
 Description: Update many photo properties at once
-Plugin URI: 
+Plugin URI: http://piwigo.org/ext/extension_view.php?eid=630
 Author: plg
 Author URI: http://piwigo.org
 */
