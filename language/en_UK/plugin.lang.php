@@ -8,4 +8,9 @@ $lang['%d photos updated'] = '%d photos updated';
 $lang['%d photos are missing in Piwigo: %s'] = '%d photos are missing in Piwigo: %s';
 $lang['Wrong file, please select a plain text file'] = 'Wrong file, please select a plain text file';
 $lang['Update'] = 'Update';
+$lang['tab'] = 'tabulation';
+$lang['space'] = 'space';
+$lang['comma'] = 'comma';
+$lang['semicolon'] = 'semicolon';
+$lang['(comma separated)'] = '(comma separated)';
 ?>

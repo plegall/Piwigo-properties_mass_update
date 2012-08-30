@@ -20,6 +20,7 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
+
 $lang['%d photos are missing in Piwigo: %s'] = '%d photos sont manquantes dans Piwigo : %s';
 $lang['%d photos updated'] = '%d photos mises à jour';
 $lang['Description for another photo'] = 'Description d\'une autre photo';
@@ -29,4 +30,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Télécharger un fichier - 
 $lang['Text file'] = 'Fichier texte';
 $lang['Update'] = 'Mettre à jour';
 $lang['Wrong file, please select a plain text file'] = 'Mauvais type de fichier, veuillez sélectionner un fichier texte';
+$lang['tab'] = 'tabulation';
+$lang['space'] = 'espace';
+$lang['comma'] = 'virgule';
+$lang['semicolon'] = 'point virgule';
+$lang['(comma separated)'] = '(séparés par des virgules)';
 ?>

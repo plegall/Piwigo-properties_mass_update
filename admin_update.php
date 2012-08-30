@@ -30,13 +30,33 @@ include_once(PHPWG_ROOT_PATH.'admin/include/functions_upload.inc.php');
 $admin_base_url = get_root_url().'admin.php?page=plugin-properties_mass_update-update';
 
 // +-----------------------------------------------------------------------+
-// | Check Access and exit when user status is not ok                      |
+// | Checks                                                                |
 // +-----------------------------------------------------------------------+
 
 check_status(ACCESS_ADMINISTRATOR);
 
+$regex_for_separator = array(
+  'tab' => '/^([^\t]+)\t+(.*)$/',
+  'space' => '/^([^\s]+)\s+(.*)$/',
+  'comma' => '/^([^,]+),+(.*)$/',
+  'semicolon' => '/^([^;]+);+(.*)$/',
+  );
+
+if (isset($_POST['submit']))
+{
+  if (!in_array($_POST['separator'], array_keys($regex_for_separator)))
+  {
+    die('Hacking attempt!');
+  }
+
+  if (!in_array($_POST['property'], array('name', 'comment', 'author', 'tags')))
+  {
+    die('Hacking attempt!');
+  }
+}
+
 // +-----------------------------------------------------------------------+
-// |                                actions                                |
+// | Actions                                                               |
 // +-----------------------------------------------------------------------+
 
 if (isset($_FILES) and !empty($_FILES['update']))
@@ -59,16 +79,17 @@ if (isset($_FILES) and !empty($_FILES['update']))
       $raw = file_get_contents($text_file);
       $raw_lines = explode("\n", $raw);
       
-      $query = 'SELECT file FROM '.IMAGES_TABLE.';';
+      $query = 'SELECT id, file FROM '.IMAGES_TABLE.';';
       $existing_files = hash_from_query($query, 'file');
             
       $updates = array();
       $update_files = array();
       $missing_files = array();
+      $tags_of = array();
       
       foreach ($raw_lines as $raw_line)
       {
-        if (!preg_match('/^([^\t]+)\t+(.*)$/', $raw_line, $matches))
+        if (!preg_match($regex_for_separator[$_POST['separator']], $raw_line, $matches))
         {
           continue;
         }
@@ -80,32 +101,57 @@ if (isset($_FILES) and !empty($_FILES['update']))
         }
 
         if (isset($existing_files[$matches[1]]))
-        {        
+        {
           $update_files[$matches[1]] = true;
+          $image_id = $existing_files[$matches[1]]['id'];
+
+          if ('tags' == $_POST['property'])
+          {
+            $tags_of[$image_id] = array();
+            $raw_tags = explode(',', $matches[2]);
+            foreach ($raw_tags as $tag)
+            {
+              $tag = trim($tag);
+              if (empty($tag))
+              {
+                continue;
+              }
+              $tag_id = tag_id_from_tag_name($tag);
+              array_push($tags_of[$image_id], $tag_id);
+            }
+          }
+          else
+          {
+            array_push(
+              $updates,
+              array(
+                'id' => $image_id,
+                $_POST['property'] => pwg_db_real_escape_string($matches[2]), // TODO right trim
+                )
+              );
+          }
         }
         else
         {
           $missing_files[$matches[1]] = true;
-          continue;
         }
-        
-        array_push(
-          $updates,
-          array(
-            'file' => pwg_db_real_escape_string($matches[1]),
-            'comment' => pwg_db_real_escape_string($matches[2]), // TODO right trim
-            )
-          );
       }
       
-      mass_updates(
-        IMAGES_TABLE,
+      if ('tags' == $_POST['property'])
+      {
+        set_tags_of($tags_of);
+      }
+      else
+      {
+        mass_updates(
+          IMAGES_TABLE,
           array(
-            'primary' => array('file'),
-            'update' => array('comment'),
-          ),
+            'primary' => array('id'),
+            'update' => array($_POST['property']),
+            ),
           $updates
-        );
+          );
+      }
 
       $endtime = get_moment();
       $elapsed = ($endtime - $starttime);
@@ -114,7 +160,7 @@ if (isset($_FILES) and !empty($_FILES['update']))
         $page['infos'],
         sprintf(
           l10n('%d photos updated'),
-          count($updates)
+          count(array_keys($update_files))
           )
         );
       
@@ -133,7 +179,7 @@ if (isset($_FILES) and !empty($_FILES['update']))
   }
   else
   {
-    array_push($page['errors'], $_FILES['mascarille_update']['error']);
+    array_push($page['errors'], $_FILES['update']['error']);
   }
 }
 
