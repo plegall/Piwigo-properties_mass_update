@@ -21,7 +21,7 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['%d photos are missing in Piwigo: %s'] = 'Следующие фотографии (%d) отсутсвуют в Piwigo: %s';
-$lang['%d photos updated'] = 'Обновлено фотографий: %s';
+$lang['%d photos updated'] = 'Обновлено фотографий: %d';
 $lang['Description for another photo'] = 'Описание для другой фотографии';
 $lang['File pattern'] = 'Маска имени файла';
 $lang['Photo description, until the end of the line'] = 'Описание фотографии (до начала следующей строки)';
