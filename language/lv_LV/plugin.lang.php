@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Sūtīt Failu - Attēla Īp
 $lang['Text file'] = 'Teksta fails';
 $lang['Update'] = 'Atjauninājums';
 $lang['Wrong file, please select a plain text file'] = 'Nepareizais fails, lūdzu atlasīt vienkāršu teksta failu';
+$lang['(comma separated)'] = '(atdalot ar komatu)';
+$lang['semicolon'] = 'semikols';
+$lang['space'] = 'atstarpe';
+$lang['tab'] = 'tabulēšana';
+$lang['comma'] = 'komats';
 ?>
