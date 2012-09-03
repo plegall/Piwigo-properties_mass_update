@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Dosya Gönder - Fotoğraf �
 $lang['Text file'] = 'Metin dosyası';
 $lang['Update'] = 'Güncelle';
 $lang['Wrong file, please select a plain text file'] = 'Yanlış dosya, lütfen bir düz metin dosyası seçiniz';
+$lang['(comma separated)'] = '(virgülle ayrılmış)';
+$lang['comma'] = 'virgül';
+$lang['semicolon'] = 'noktalı virgül';
+$lang['space'] = 'boşluk';
+$lang['tab'] = 'listeleme';
 ?>
