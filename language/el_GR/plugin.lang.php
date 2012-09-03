@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Αποστολή αρχεί
 $lang['Text file'] = 'Αρχείο Κειμένου';
 $lang['Update'] = 'Ενημέρωση';
 $lang['Wrong file, please select a plain text file'] = 'Λάθος αρχείο, επιλέξτε ένα απλό αρχείο κειμένου';
+$lang['tab'] = 'κατάταξη σε πίνακα';
+$lang['space'] = 'διάστημα';
+$lang['semicolon'] = 'άνω τελεία ';
+$lang['comma'] = 'κόμμα';
+$lang['(comma separated)'] = 'διαχωρισμός με κόμμα';
 ?>
