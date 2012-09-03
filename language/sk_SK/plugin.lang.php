@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Po&#353;li s&uacute;bor - H
 $lang['Text file'] = 'Textov&yacute; s&uacute;bor';
 $lang['Update'] = 'Obnovi&#357;';
 $lang['Wrong file, please select a plain text file'] = 'Nespr&aacute;vny s&uacute;bor, vyberte pros&iacute;m oby&#269;ajn&yacute; textov&yacute; s&uacute;bor';
+$lang['tab'] = 'tabelácia';
+$lang['comma'] = 'čiarka';
+$lang['semicolon'] = 'bodkočiarka';
+$lang['space'] = 'medzera';
+$lang['(comma separated)'] = '(čiarkou oddelené)';
 ?>
