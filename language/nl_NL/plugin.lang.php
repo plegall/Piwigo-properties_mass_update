@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Verstuur bestand - massaal 
 $lang['Text file'] = 'Tekstbestand';
 $lang['Update'] = 'Bijwerken';
 $lang['Wrong file, please select a plain text file'] = 'Verkeerd bestand, kies een bestand met platte tekst';
+$lang['(comma separated)'] = '(komma gescheiden)';
+$lang['comma'] = 'komma';
+$lang['semicolon'] = 'puntkomma';
+$lang['space'] = 'spatie';
+$lang['tab'] = 'tabel';
 ?>
