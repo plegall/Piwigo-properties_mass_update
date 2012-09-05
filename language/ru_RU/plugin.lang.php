@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Отправить файл
 $lang['Text file'] = 'Текстовый файл';
 $lang['Update'] = 'Обновить';
 $lang['Wrong file, please select a plain text file'] = 'Неверный формат файла. Пожалуйста, укажите текстовый файл.';
+$lang['(comma separated)'] = '(разделенные запятыми)';
+$lang['comma'] = 'запятая';
+$lang['semicolon'] = 'двоеточие';
+$lang['space'] = 'пробел';
+$lang['tab'] = 'табуляция';
 ?>
