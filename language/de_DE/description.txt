@@ -1,1 +1,1 @@
-Aktualisieren Sie Eigenschaften mehrerer Fotos auf einmal durch das Importieren einer Textdatei
+Aktualisieren Sie die Fotoeigenschaften vieler Bilder auf einmal.

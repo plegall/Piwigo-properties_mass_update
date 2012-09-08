@@ -20,13 +20,18 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['%d photos are missing in Piwigo: %s'] = '%d Foto die in Piwigo fehlen: %s';
+$lang['%d photos are missing in Piwigo: %s'] = '%d Fotos, die in Piwigo fehlen: %s';
 $lang['%d photos updated'] = '%d Fotos aktualisiert';
 $lang['Description for another photo'] = 'Beschreibung für ein anderes Foto';
-$lang['File pattern'] = 'Datei-Struktur';
-$lang['Photo description, until the end of the line'] = 'Foto Beschreibung bis zum Ende der Zeile';
-$lang['Send File - Photo Properties Mass Update'] = 'Sende  Datei - Foto Eigenschaften Massen-Update';
-$lang['Text file'] = 'Text Datei';
+$lang['File pattern'] = 'Dateistruktur';
+$lang['Photo description, until the end of the line'] = 'Fotobeschreibung, bis zum Ende der Zeile';
+$lang['Send File - Photo Properties Mass Update'] = 'Sende Datei - Fotoeigenschaften Massenaktualisierung';
+$lang['Text file'] = 'Textdatei';
 $lang['Update'] = 'Aktualisierung';
-$lang['Wrong file, please select a plain text file'] = 'Falsche Datei, wählen Sie bitte nur eine reine Text-Datei';
+$lang['Wrong file, please select a plain text file'] = 'Falsche Datei, wählen Sie bitte eine reine Textdatei';
+$lang['tab'] = 'Tabulator';
+$lang['space'] = 'Leerzeichen';
+$lang['semicolon'] = 'Strichpunkt';
+$lang['comma'] = 'Komma';
+$lang['(comma separated)'] = '(kommagetrennt)';
 ?>
