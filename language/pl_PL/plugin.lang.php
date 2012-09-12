@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Wyślij Plik - Masowa Aktua
 $lang['Text file'] = 'Plik tekstowy';
 $lang['Update'] = 'Aktualizuj';
 $lang['Wrong file, please select a plain text file'] = 'Zły plik, wybierz pusty plik tekstowy';
+$lang['(comma separated)'] = 'oddzielone przcinkiem';
+$lang['comma'] = 'przecinek';
+$lang['semicolon'] = 'średnik';
+$lang['space'] = 'spacja';
+$lang['tab'] = 'tabulacja';
 ?>
