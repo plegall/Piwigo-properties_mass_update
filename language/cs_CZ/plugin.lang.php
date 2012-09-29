@@ -29,4 +29,9 @@ $lang['Send File - Photo Properties Mass Update'] = 'Pošli soubor - Masová aAk
 $lang['Text file'] = 'Textový soubor';
 $lang['Update'] = 'Aktualizuj';
 $lang['Wrong file, please select a plain text file'] = 'Špatný soubor, posím vyberte jednoduchý textový soubor';
+$lang['(comma separated)'] = '(oddělené čárkou)';
+$lang['comma'] = 'čárka';
+$lang['semicolon'] = 'středník';
+$lang['space'] = 'mezera';
+$lang['tab'] = 'tabulátor';
 ?>
