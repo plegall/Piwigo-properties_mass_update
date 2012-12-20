@@ -23,7 +23,7 @@
 $lang['%d photos are missing in Piwigo: %s'] = '%d kép nem található: %s';
 $lang['%d photos updated'] = '%d kép frissítve';
 $lang['(comma separated)'] = '(vesszővel elválasztva)';
-$lang['File pattern'] = 'Fájl minta';
+$lang['File pattern'] = 'Fájlminta';
 $lang['Text file'] = 'Szövegfájl';
 $lang['Update'] = 'Frissítés';
 $lang['Wrong file, please select a plain text file'] = 'Nem megfelelő fájl, válasszom egy egyszerű szövegfájlt';
@@ -31,4 +31,7 @@ $lang['comma'] = 'vessző';
 $lang['semicolon'] = 'pontosvessző';
 $lang['space'] = 'szóköz';
 $lang['tab'] = 'tabulátoros';
+$lang['Description for another photo'] = 'Másik kép leírás';
+$lang['Photo description, until the end of the line'] = 'Kép leírás a sor végéig';
+$lang['Send File - Photo Properties Mass Update'] = 'Fájl küldése - kép tulajdonságok kötegelt frissítése';
 ?>
