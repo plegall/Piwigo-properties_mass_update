@@ -1,0 +1,1 @@
+Actualitzar les propietats de vàries fotos a la vegada mitjançant la importació d'un arxiu de text
