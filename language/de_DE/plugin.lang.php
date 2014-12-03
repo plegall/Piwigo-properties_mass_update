@@ -25,13 +25,12 @@ $lang['%d photos updated'] = '%d Fotos aktualisiert';
 $lang['Description for another photo'] = 'Beschreibung für ein anderes Foto';
 $lang['File pattern'] = 'Dateistruktur';
 $lang['Photo description, until the end of the line'] = 'Fotobeschreibung, bis zum Ende der Zeile';
-$lang['Send File - Photo Properties Mass Update'] = 'Sende Datei - Fotoeigenschaften Massenaktualisierung';
+$lang['Send File - Photo Properties Mass Update'] = 'Datei senden - Fotoeigenschaften Massenaktualisierung';
 $lang['Text file'] = 'Textdatei';
 $lang['Update'] = 'Aktualisierung';
-$lang['Wrong file, please select a plain text file'] = 'Falsche Datei, wählen Sie bitte eine reine Textdatei';
+$lang['Wrong file, please select a plain text file'] = 'Falsches Dateiformat, bitte eine reine Textdatei auswählen';
 $lang['tab'] = 'Tabulator';
 $lang['space'] = 'Leerzeichen';
 $lang['semicolon'] = 'Strichpunkt';
 $lang['comma'] = 'Komma';
 $lang['(comma separated)'] = '(kommagetrennt)';
-?>
