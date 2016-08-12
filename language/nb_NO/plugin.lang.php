@@ -20,16 +20,16 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['%d photos are missing in Piwigo: %s'] = '%d bilder er savnet i Piwigo: %s';
+$lang['%d photos are missing in Piwigo: %s'] = '%d bilder savnes i Piwigo: %s';
 $lang['%d photos updated'] = '%d bilder oppdatert';
 $lang['(comma separated)'] = '(kommaseparert)';
 $lang['Description for another photo'] = 'Beskrivelse av et annet bilde';
-$lang['File pattern'] = 'Fil mønster';
-$lang['Photo description, until the end of the line'] = 'Bilde beskrivelse, til slutten av linjen';
-$lang['Send File - Photo Properties Mass Update'] = 'Send fil - Masseoppdatering av Bilde Beskrivelse ';
-$lang['Text file'] = 'Tekst fil';
+$lang['File pattern'] = 'Filmønster';
+$lang['Photo description, until the end of the line'] = 'Bildebeskrivelse, til slutten av linjen';
+$lang['Send File - Photo Properties Mass Update'] = 'Send fil - Masseoppdatering av Bildebeskrivelser';
+$lang['Text file'] = 'Tekstfil';
 $lang['Update'] = 'Oppdater';
-$lang['Wrong file, please select a plain text file'] = 'Feil fil, vennligst velg en ren tekst fil';
+$lang['Wrong file, please select a plain text file'] = 'Feil fil, vennligst velg en ren tekstfil';
 $lang['comma'] = 'komma';
 $lang['semicolon'] = 'semikolon';
 $lang['space'] = 'mellomrom';
