@@ -21,3 +21,10 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['Send File - Photo Properties Mass Update'] = 'Send file - photo properties mass update';
+$lang['space'] = 'spatie';
+$lang['comma'] = 'komma';
+$lang['Update'] = 'Update';
+$lang['Photo description, until the end of the line'] = 'Foto beschrijving, tot het einde van de lijn';
+$lang['Description for another photo'] = 'Omschrijving voor een andere foto';
+$lang['%d photos updated'] = '%d foto\'s zijn geupdate';
+$lang['%d photos are missing in Piwigo: %s'] = '%d foto\'s zijn missend in Piwigo: %s';
