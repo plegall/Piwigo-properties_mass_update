@@ -1,0 +1,1 @@
+Update many photo properties at once
