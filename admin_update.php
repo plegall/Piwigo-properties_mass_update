@@ -29,6 +29,13 @@ include_once(PHPWG_ROOT_PATH.'admin/include/functions_upload.inc.php');
 
 $admin_base_url = get_root_url().'admin.php?page=plugin-properties_mass_update-update';
 
+function ppmu_remove_utf8_bom($text)
+{
+    $bom = pack('H*','EFBBBF');
+    $text = preg_replace("/^$bom/", '', $text);
+    return $text;
+}
+
 // +-----------------------------------------------------------------------+
 // | Checks                                                                |
 // +-----------------------------------------------------------------------+
@@ -65,7 +72,7 @@ if (isset($_FILES) and !empty($_FILES['update']))
   
   if (UPLOAD_ERR_OK == $_FILES['update']['error'])
   {
-    if ('text/plain' == $_FILES['update']['type'])
+    if (in_array($_FILES['update']['type'], array('text/plain', 'text/csv')))
     {
       $text_file = $_FILES['update']['tmp_name'];
     }
@@ -76,8 +83,10 @@ if (isset($_FILES) and !empty($_FILES['update']))
 
     if (isset($text_file))
     {
-      $raw = file_get_contents($text_file);
-      $raw_lines = explode("\n", $raw);
+      ini_set("auto_detect_line_endings", true);
+      $raw_lines = file($text_file);
+
+      $raw_lines[0] = ppmu_remove_utf8_bom($raw_lines[0]);
       
       $query = 'SELECT id, file FROM '.IMAGES_TABLE.';';
       $existing_files = hash_from_query($query, 'file');
@@ -86,14 +95,14 @@ if (isset($_FILES) and !empty($_FILES['update']))
       $update_files = array();
       $missing_files = array();
       $tags_of = array();
-      
+
       foreach ($raw_lines as $raw_line)
       {
         if (!preg_match($regex_for_separator[$_POST['separator']], $raw_line, $matches))
         {
           continue;
         }
-        
+
         // in case the same file is defined twice, we only save the first occurence
         if (isset($update_files[$matches[1]]) or isset($missing_files[$matches[1]]))
         {
