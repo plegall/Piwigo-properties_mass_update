@@ -125,7 +125,7 @@ if (isset($_FILES) and !empty($_FILES['update']))
               {
                 continue;
               }
-              $tag_id = tag_id_from_tag_name($tag);
+              $tag_id = tag_id_from_tag_name(pwg_db_real_escape_string($tag));
               array_push($tags_of[$image_id], $tag_id);
             }
           }
