@@ -98,6 +98,9 @@ if (isset($_FILES) and !empty($_FILES['update']))
 
       foreach ($raw_lines as $raw_line)
       {
+        // finish to clean line endings
+        $raw_line = trim($raw_line);
+
         if (!preg_match($regex_for_separator[$_POST['separator']], $raw_line, $matches))
         {
           continue;
