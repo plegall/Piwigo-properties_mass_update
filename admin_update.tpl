@@ -2,7 +2,7 @@
   <h2>{'Send File - Photo Properties Mass Update'|@translate}</h2>
 </div>
 
-<form method="post" action="{$F_ACTION}" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
 <fieldset>
   <legend>{'Text file'|@translate}</legend>
   <p style="margin:0 0 15px 0; text-align:left;"><strong>{'File pattern'|@translate}</strong><br>

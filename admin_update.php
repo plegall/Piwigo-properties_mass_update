@@ -83,7 +83,10 @@ if (isset($_FILES) and !empty($_FILES['update']))
 
     if (isset($text_file))
     {
-      ini_set("auto_detect_line_endings", true);
+      if (version_compare(PHP_VERSION, '8.1.0', '<'))
+      {
+        ini_set("auto_detect_line_endings", true);
+      }
       $raw_lines = file($text_file);
 
       $raw_lines[0] = ppmu_remove_utf8_bom($raw_lines[0]);
