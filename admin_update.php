@@ -72,7 +72,7 @@ if (isset($_FILES) and !empty($_FILES['update']))
   
   if (UPLOAD_ERR_OK == $_FILES['update']['error'])
   {
-    if (in_array($_FILES['update']['type'], array('text/plain', 'text/csv')))
+    if (in_array($_FILES['update']['type'], array('text/plain', 'text/csv', 'text/tab-separated-values')))
     {
       $text_file = $_FILES['update']['tmp_name'];
     }
